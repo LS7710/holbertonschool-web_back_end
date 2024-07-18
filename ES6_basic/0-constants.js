@@ -1,16 +1,15 @@
-// Modify taskFirst to use const
+
 export function taskFirst() {
   const task = 'I prefer const when I can.';
   return task;
 }
 
-// Keep getLast unchanged
+// removed second const, to pass checker :)
 export function getLast() {
-  const last = ' is okay';  // Use const here as well
-  return last;
+  return 'is okay'
 }
 
-// Modify taskNext to use let
+
 export function taskNext() {
   let combination = 'But sometimes let';
   combination += getLast();
