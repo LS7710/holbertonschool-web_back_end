@@ -6,7 +6,8 @@ export function taskFirst() {
 
 // Keep getLast unchanged
 export function getLast() {
-  return ' is okay';
+  const last = ' is okay';  // Use const here as well
+  return last;
 }
 
 // Modify taskNext to use let
