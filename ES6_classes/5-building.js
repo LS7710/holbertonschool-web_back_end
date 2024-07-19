@@ -1,8 +1,5 @@
 class Building {
   constructor(sqft) {
-    if (new.target === Building) {
-      throw new TypeError('Cannot construct Building instances directly');
-    }
     this._sqft = sqft;
   }
 
