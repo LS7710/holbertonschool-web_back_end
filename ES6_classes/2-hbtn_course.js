@@ -14,7 +14,7 @@ export default class HolbertonCourse {
       throw new TypeError('Name must be a string');
     }
     this._name = value;
-    }
+  }
 
   get length() {
     return this._length;
@@ -24,7 +24,7 @@ export default class HolbertonCourse {
     if (typeof value !== 'number') {
       throw new TypeError('Length must be a number');
     }
-      this._length = value;
+    this._length = value;
   }
 
   get students() {
