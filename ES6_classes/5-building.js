@@ -1,9 +1,9 @@
 class Building {
     constructor(sqft) {
-        if (new.target === Building) {
-            throw new Error("Cannot instantiate an abstract class");
-        }
         this._sqft = sqft;
+        if (this.constructor !== Building && !this.evacuationWarningMessage) {
+            throw new Error("Class extending Building must override evacuationWarningMessage");
+        }
     }
 
     get sqft() {
