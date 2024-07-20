@@ -14,6 +14,7 @@ class Building {
   }
 
   evacuationWarningMessage() {
+    this._dummy = 'dummy';
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
 }
