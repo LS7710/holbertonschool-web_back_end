@@ -11,20 +11,19 @@ export default class Car {
 
   get motor() {
     return this._motor;
-  }
+}
 
   get color() {
     return this._color;
-  }
+}
 
   cloneCar() {
     const clonedCar = Object.create(Object.getPrototypeOf(this));
     Object.assign(clonedCar, this);
     return clonedCar;
   }
-}
 
-Object.defineProperty(Car, Symbol.species, {
-  value: Car,
-  writable: false,
-});
+  static get [Symbol.species]() {
+    return this;
+  }
+}
