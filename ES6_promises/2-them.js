@@ -1,12 +1,11 @@
-import { uploadPhoto, createUser } from './utils';
-
-export default function handleProfileSignup() {
-  return Promise.all([uploadPhoto(), createUser()])
-    .then((results) => {
-      const [photo, user] = results;
-      console.log(`${photo.body} ${user.firstName} ${user.lastName}`);
+export default function handleResponseFromAPI(promise) {
+  return promise
+    .then(() => {
+      console.log('Got a response from the API');
+      return {
+        status: 200,
+        body: 'success',
+      };
     })
-    .catch(() => {
-      console.log('Signup system offline');
-    });
+    .catch(() => new Error());
 }
