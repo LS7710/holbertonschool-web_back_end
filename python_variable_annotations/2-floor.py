@@ -13,14 +13,14 @@ def floor(n: float) -> int:
     """
     Return the floor of a floating-point number.
 
-    The floor of a number is the largest integer less than or equal to the given number.
-    
+    The floor of a number is the largest integer less than or equal.
+
     Args:
         n (float): The floating-point number to be floored.
 
     Returns:
         int: The floor of the given number.
-    
+
     Example:
         >>> floor(3.7)
         3
