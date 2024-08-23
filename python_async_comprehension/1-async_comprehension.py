@@ -9,4 +9,4 @@ async def async_comprehension() -> List[float]:
     """
     Func 1
     """
-    return [i async for i in async_generator()]
+    return [i async for i in task0()]
