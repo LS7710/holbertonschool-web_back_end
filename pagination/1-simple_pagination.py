@@ -51,8 +51,10 @@ class Server:
         Returns:
             List[List]: The list of rows corresponding to the requested page.
         """
-        assert isinstance(page, int) and page > 0, "Page number must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer"
+        assert isinstance(page, int) and page > 0, \
+        "Page number must be a positive integer"
+        assert isinstance(page_size, int) and page_size > 0, \
+        "Page size must be a positive integer"
 
         start_index, end_index = index_range(page, page_size)
         dataset = self.dataset()
