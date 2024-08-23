@@ -59,7 +59,7 @@ class Server:
         start_index, end_index = index_range(page, page_size)
         dataset = self.dataset()
 
-        # If start_index is out of range, return an empty list
+
         if start_index >= len(dataset):
             return []
 
