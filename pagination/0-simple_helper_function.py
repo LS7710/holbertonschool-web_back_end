@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+"""Task 0"""
+
+
 def index_range(page: int, page_size: int) -> tuple:
     """
     Calculate the start and end index for the pagination parameters.
